@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;  /*заполнение свободного пространства*/
+  align-items: center;   /*выравнивание по вертикали*/
+  justify-content: center; /*выравнивание по горизонтали*/
+  height: 100vh;
+  overflow: hidden;   /* как оборажается, если блок переполнен */
+  margin: 0;
+}
+
+.container {
+max-width: 400px;
+/* background-color: rgb(54, 52, 52); */
+display: flex;
+margin-left: 10%;
+/* align-items: center;   
+justify-content: center;  */
+flex-wrap: wrap;
+
+}
+
+.square {
+ background-color: rgba(128, 128, 128, 0.185);
+ height: 15px;
+ width: 15px;
+ margin: 2px;
+ box-shadow: 0 0 2px #000;
+ transition: 3s ease; 
+}
+
+.square:hover {
+  transition-duration: 0s; /*сколько времени должен длиться переход от одного состояния к другому*/
+}
+
+.text {
+  display:inline-flex;
+  color: aliceblue;
+  font-size: 180%;
+  opacity: 70%;
+}
